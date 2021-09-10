@@ -28,7 +28,7 @@ body{
 .cabeza__logo{
     width: 8%;
     align-self: flex-start;
-    margin-top: -2rem;
+    margin-top: -1rem;
     margin-right:5rem;
 }
 .cabeza__logo--titulo{
@@ -44,6 +44,14 @@ body{
 }
 
 /***********************************************Navegador*********************************************/
+.btn{
+    display: none;
+    width: 4%;
+    margin: 1rem;
+}
+button img {
+    width: 80%;
+}
 .navegacion{
     background-color: #ffffff;
     width: 100%;
@@ -102,6 +110,7 @@ li a:hover{
 .Clearfix{
     clear: both;
 }
+
 /*******************************************main-inicio***********************************************/
 main{
     width: 100%;
@@ -361,32 +370,26 @@ a{
     text-decoration: none;
     transition: none;
 }
+.btn{
+    display:inline;
+    width: 20%;
+    margin:  2rem 1rem;
+}
+button img {
+    width: 80%;
+}
+.dropdown-menu{
+    width: 100vw;
+}
+.dropdown-item{
+    border-bottom: solid black 2px;
+}
 .navegacion{
     width: 100vw;
 }
 
 .menu-principal{
-    display: flex;
-    flex-flow:column;
-    justify-content:center;
-    list-style: none;
-    font-size: 0.5rem;
-}
-.menu-principal__lista{
-    padding: 10px;
-    position: relative;
-    
-
-}
-.menu-principal__lista--sublista{
-    font-size: 0.5rem;
-    padding: 1rem 0 0 0;
-    text-align: center;
-    border-bottom: black solid 1px;
-}
-
-li a:hover{
-    transition: none;
+    display: none;
 }
 .fixed-h-n{
     width: 100vw;
@@ -397,7 +400,7 @@ li a:hover{
 }
 .contenido{
     width: 100%;
-    margin-top: 8rem;
+    margin-top: 4rem;
 }
 .inicio-flex{
     width: 100vw;
@@ -483,6 +486,9 @@ height: 15rem;
    height: 3rem;
    
 }
+.text-area{
+    width: 100%;
+}
 .titulos-contacto{
     text-align: left;
    padding: 1rem;
@@ -555,32 +561,27 @@ height: 15rem;
         text-decoration: none;
         transition: none;
     }
+
+    .btn{
+        display:inline;
+        width: 9%;
+        margin:  2rem 1rem;
+    }
+    button img {
+        width: 85%;
+    }
+    .dropdown-menu{
+        width: 100vw;
+    }
+    .dropdown-item{
+        border-bottom: solid black 2px;
+    }
     .navegacion{
         width: 100vw;
     }
     
     .menu-principal{
-        display: flex;
-        flex-flow:row;
-        justify-content:center;
-        list-style: none;
-        font-size: 1rem;
-    }
-    .menu-principal__lista{
-        padding: 10px;
-        position: relative;
-        
-    
-    }
-    .menu-principal__lista--sublista{
-        font-size: 0.8rem;
-        padding: 1rem 0 0 0;
-        text-align: center;
-        border-bottom: black solid 1px;
-    }
-    
-    li a:hover{
-        transition: none;
+        display: none;
     }
     .fixed-h-n{
         width: 100vw;
