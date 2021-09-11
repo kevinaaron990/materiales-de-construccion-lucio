@@ -131,9 +131,6 @@ main{
     font-size: 2.5rem;
     border-bottom: orange solid 2px;
 }
-span{
-    color: orange;
-}
 .inicio-flex{
     width: 100%;
     display: flex;

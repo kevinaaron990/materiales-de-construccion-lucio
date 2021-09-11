@@ -1,0 +1,27 @@
+/******************************Importaciones***************************************************/
+/********************************Colores*************************************************/
+/********************variables************/
+/*******************************Anidacion******************************************************/
+h3 span {
+  color: #ff6600; }
+
+span {
+  color: #ff6600; }
+
+.inicio-mp {
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  border: black solid 5px;
+  height: 550px;
+  margin: 1rem;
+  padding: 1rem; }
+  .inicio-mp img {
+    width: 70%;
+    height: 300px;
+    margin-bottom: 2rem;
+    border: black solid 2px; }
+  .inicio-mp h3 {
+    font-size: 2rem; }
+  .inicio-mp a button {
+    background-color: #ff6600; }
