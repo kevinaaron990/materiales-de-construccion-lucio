@@ -1,0 +1,10 @@
+/**********************************each*****************************************************/
+@each $inicio-logo in weber, lomanegra, acindar, klaukor {
+    .#{$inicio-logo}-logo{
+        display: flex;
+        width: 5rem;
+    }
+       
+    
+
+}

@@ -1,0 +1,17 @@
+/**********************************mixin*****************************************************/
+@mixin inicio-productos($ancho-inicio, $texto-centro , $border-radio , $border-i, $altura-incio ,$margin-i ,$padding-i) {
+    width: $ancho-inicio;
+    text-align: $texto-centro;
+    border-radius: $border-radio;
+    border:$border-i ;
+    height: $altura-incio;
+    margin: $margin-i;
+    padding: $padding-i;
+    
+}
+@mixin responsive($breackpoint) {
+    @media  screen and (max-width: map-get ($breackpoint, $breackpoint)) {
+        @content;
+        
+    }
+}
