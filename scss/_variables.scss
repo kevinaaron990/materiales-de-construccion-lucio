@@ -5,4 +5,15 @@ $breackpoint : (
     mobil : 576px,
     tablet : 991px,
     desktop : 1225px,
-)
+);
+
+/********************************modificaciones-Bootstrap****************************************/
+$carousel-transition-duration:.4s;
+$carousel-control-color:$minaranja;
+$dropdown-color:$white;
+$dropdown-bg:$white;
+$dropdown-border-color:$dark;
+$dropdown-link-active-bg:$minaranja;
+$dropdown-link-active-color:$white;
+
+

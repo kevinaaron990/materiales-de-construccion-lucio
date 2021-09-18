@@ -1,11 +1,15 @@
 
 
 /******************************Importaciones***************************************************/
-@import "scss/base/colores";
+@import "../scss/base/colores";
 @import "mixin";
 @import "variables";
+@import "each";
+@import "../node_modules/bootstrap/scss/bootstrap";
 
-/*******************************Anidacion-css******************************************************/
+
+
+
 * {
     
     margin: 0;
@@ -97,7 +101,7 @@ button img {
     font-size: 0.8rem;
     padding: 1rem 0 0 0;
     text-align: center;
-    border-bottom: black solid 1px;
+    border-bottom: $dark 1px;
 }
 nav ul ul {
     display:none;
@@ -105,9 +109,17 @@ nav ul ul {
 }
 
 li a:hover{
+    @if  (4 == 5){ 
+        color: $primary;
+        transition: all 0.5s;
+        text-decoration:none;
+        
+    } 
+    @else{
+
     color: $minaranja;
     transition: all 0.5s;
-    text-decoration:none;
+    text-decoration:none;}
 
 }
 
@@ -139,7 +151,7 @@ main{
     justify-content: center;
     font-family: 'Roboto Slab', serif;
     font-size: 2.5rem;
-    border-bottom: orange solid 2px;
+    border-bottom: $minaranja solid 2px;
 }
 .inicio-flex{
     width: 100%;
@@ -153,10 +165,7 @@ main{
     
 }
 .inicio-flex__marcos img{
-    width: 100vw;
-    height: 300px;
-    margin-bottom: 2rem;
-    border: black solid 2px;
+    @include tamaño-imagenes-i(100vw, 300px, 2rem, border black solid 2px)
 }
 .inicio-flex__marcos--nombres-productos{
     font-size: 0.8rem;
@@ -167,10 +176,7 @@ main{
     @include inicio-productos(100%, center, 10px, black solid 5px, 550px, 1rem, 1rem)
 }
 .inicio-mp img{
-    width: 100vw;
-    height: 300px;
-    margin-bottom: 2rem;
-    border: black solid 2px;
+    @include tamaño-imagenes-i(100vw, 300px, 2rem, border black solid 2px)
 }
 .inicio-mp__info{
     width: 100%;
@@ -181,7 +187,7 @@ main{
 button{
     padding: 0.5rem;
     border-radius: 1rem;
-    border: solid black 2px;
+    border: solid $dark 2px;
     margin:0; 
     background-color:$minaranja;
 }
@@ -213,7 +219,7 @@ span{
     background-color: black;
     height: 500px;
     border-radius:10px;
-    border: grey solid 5px;
+    border: $dark solid 5px;
     color: white;
     
 }
@@ -250,8 +256,8 @@ span{
    color: white;
    padding: 5px;
    margin: 5px;
-   border-radius: 10px;
-   border: solid grey 10px;
+   border-radius: 10*2px;
+   border: solid $minaranja 1*10px;
 }
 .contactogrid__formulario--contactos{
    font-size: 1.5rem;
@@ -385,6 +391,7 @@ span{
         @include inicio-productos(40%, center, 10px, solid $minaranja 2px, 200px, 2rem, auto)
     }
 }
+
 
 @import "responsive";
         

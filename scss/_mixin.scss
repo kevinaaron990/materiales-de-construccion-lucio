@@ -15,3 +15,9 @@
         
     }
 }
+@mixin tamaño-imagenes-i ($ancho, $alto, $margen-bottom, $border){
+    width: $ancho;
+    height: $alto;
+    margin-bottom: $margen-bottom;
+    border: $border;
+}
