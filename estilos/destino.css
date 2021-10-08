@@ -8047,6 +8047,12 @@ span {
   flex-direction: row;
   justify-content: center; }
 
+.carousel-nosotros {
+  height: 800px; }
+
+.carousel-nosotros-img {
+  height: 500px; }
+
 /*************************************************************************CONTACTO-GRID************************************************************************/
 .contactogrid {
   display: grid;
@@ -8373,6 +8379,10 @@ span {
     font-size: 1.5rem; }
   .aside {
     width: 100vw; }
+  .carousel-nosotros {
+    height: 200px; }
+  .carousel-nosotros-img {
+    height: 500px; }
   .asideTodos {
     width: 100vw;
     padding: 1rem; }
@@ -8558,6 +8568,10 @@ span {
     text-align: left;
     padding: 1rem;
     font-size: 1.5rem; }
+  .carousel-nosotros {
+    height: 400px; }
+  .carousel-nosotros-img {
+    height: 600px; }
   .aside {
     width: 100vw; }
   .asideTodos {
@@ -8746,6 +8760,10 @@ span {
     text-align: left;
     padding: 1rem;
     font-size: 1.5rem; }
+  .carousel-nosotros {
+    height: 450px; }
+  .carousel-nosotros-img {
+    height: 600px; }
   .aside {
     width: 100vw; }
   .asideTodos {
